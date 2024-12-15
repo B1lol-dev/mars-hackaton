@@ -1,0 +1,98 @@
+header{
+    background: #000;
+}
+
+header p{
+    color: white;
+}
+
+
+.header_top{
+    padding: 10px 150px;
+    font-family: sans-serif;
+
+    & .container{
+        display: flex;
+        justify-content: space-between;
+
+        .info{
+            color: #969696;
+            display: flex;
+            align-items: center;
+
+            &::before{
+                content: url("../../assets/header/phone.svg");
+                margin-right: 1rem;
+                height: 13px;
+            }
+        }
+
+        .user{
+            display: flex;
+            align-items: center;
+            color: #969696;
+
+            &::before{
+                content: url("../../assets/header/login.svg");
+                height: 14px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+
+.nav_logo{
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    flex: 1;
+}
+
+.navbar{
+    background: #0F0F0F;
+    padding: 0;
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+.nav_collection{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-family: sans-serif;
+
+    & li{
+        color: #969696;
+        text-transform: uppercase;
+        padding: 31px 20px 31px 20px;
+        cursor: pointer;
+        
+        &:hover{
+            color: white;
+            background: #1F1F1F;
+        }
+    }
+}
+
+.nav_btns{
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    & button{
+        background: none;
+        border: none;
+    }
+}

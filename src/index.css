@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1109px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+:root {
+  --bg_black: black;
+  --bg_white: white;
+
+  --text_white: white;
+  --text_black: black;
+
+  --footer_bg: #0F0F0F;
+
+  --card_bg: #191B1C;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}

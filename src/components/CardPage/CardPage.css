@@ -1,0 +1,74 @@
+main {
+  & section {
+    background: var(--bg_black);
+    padding-block: 150px;
+
+    & .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 80px;
+      & .product_img {
+        height: 500px;
+
+        & img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      & .product_text {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+
+        & h1 {
+          color: white;
+          font-family: "Playfair Display";
+          font-size: 2.25rem;
+          font-weight: 700;
+          position: relative;
+          display: flex;
+          justify-content: center;
+
+          &::before {
+            content: "";
+            width: 110px;
+            background: white;
+            border: 1px solid white;
+            position: absolute;
+            bottom: -50px;
+          }
+        }
+
+        & p {
+          color: var(--text_white);
+          margin-top: 80px;
+          font-size: 1.2rem;
+        }
+
+        & button {
+          margin-top: 60px;
+          font-family: "PT Sans";
+          font-size: 1.125rem;
+          color: var(--text_white);
+          background: transparent;
+          outline: 1px solid var(--text_white);
+          padding: 12px 28px 12px 28px;
+          text-transform: uppercase;
+          transition: 0.2s ease-in-out;
+
+          &:hover {
+            background: var(--bg_white);
+            outline: none;
+            color: var(--text_black);
+          }
+
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+}

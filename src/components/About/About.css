@@ -1,0 +1,171 @@
+@import url("../../index.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+#about {
+  & .about_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & .about_cards {
+      background: var(--bg_black);
+      padding-block: 93px 73px;
+      padding-inline: 74px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 100px;
+
+      & h2 {
+        color: white;
+        font-family: "Playfair Display";
+        font-size: 2.25rem;
+        font-weight: 700;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        &::before {
+          content: "";
+          width: 110px;
+          background: white;
+          border: 1px solid white;
+          position: absolute;
+          bottom: -50px;
+        }
+      }
+
+      & .about_cards_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 46px;
+      }
+    }
+
+    & .about_collection {
+      background: url("../../assets/about/man.png") no-repeat center
+        center/cover;
+      padding: 484px 275px 177px 275px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & h2 {
+        color: white;
+        font-family: "Playfair Display";
+        font-size: 2.25rem;
+        font-weight: 700;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+
+        &::before {
+          content: "";
+          width: 130px;
+          background: white;
+          border: 1px solid white;
+          position: absolute;
+          bottom: -30px;
+        }
+      }
+
+      & button {
+        margin-top: 60px;
+        font-family: "PT Sans";
+        font-size: 1.125rem;
+        color: var(--text_white);
+        background: transparent;
+        outline: 1px solid var(--text_white);
+        padding: 12px 28px 12px 28px;
+        text-transform: uppercase;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          background: var(--bg_white);
+          outline: none;
+          color: var(--text_black);
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+
+    & .about_suit {
+      background: url("../../assets/about/suit.png") no-repeat center
+        center/cover;
+      height: 600px;
+    }
+
+    & .about_info {
+      background: var(--bg_black);
+      padding: 100px 284px 100px 205px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      & h2 {
+        color: white;
+        font-family: "Playfair Display";
+        font-size: 2.25rem;
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+
+        &::before {
+          content: "";
+          width: 120px;
+          background: white;
+          border: 1px solid white;
+          position: absolute;
+          bottom: -40px;
+        }
+      }
+
+      & p {
+        max-width: 471px;
+        color: var(--text_white);
+        font-family: "PT sans";
+        font-size: 0.875rem;
+        text-align: center;
+        margin-top: 80px;
+      }
+
+      & button {
+        margin-top: 61px;
+        font-family: "PT Sans";
+        font-size: 1.125rem;
+        color: var(--text_white);
+        background: transparent;
+        outline: 1px solid var(--text_white);
+        padding: 12px 28px 12px 28px;
+        text-transform: uppercase;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+          background: var(--bg_white);
+          outline: none;
+          color: var(--text_black);
+        }
+
+        &:active {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1800px) {
+  #about {
+    & .about_wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}

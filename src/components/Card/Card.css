@@ -1,0 +1,30 @@
+@import url("../../index.css");
+
+.card {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    & .card_image {
+      & img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  & .card_image {
+    background: var(--card_bg);
+    padding-block: 55px 56px;
+    padding-inline: 21px 20px;
+
+    & img {
+      object-fit: cover;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  & .card_info {
+    margin-top: 25px;
+    color: white;
+  }
+}
